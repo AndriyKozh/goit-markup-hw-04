@@ -388,16 +388,16 @@ border-radius: 50%;
 	margin-right: 0;
 }
 
-.social:hover .team-icon{
-	fill: var(--color-text-button)
+.social:hover .team-icon,
+.social:focus .team-icon{
+	fill: var(--color-text)
 }
 
-.social:hover{
+.social:hover,
+.social:focus{
 	background-color: var(--accent-color);
 }
-/* .team-icon:hover{
-	fill: var(--color-text-button);
-} */
+
 .team-icon{
 fill: #AFB1B8;
 padding: auto;	
@@ -547,7 +547,7 @@ margin-right: 70px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--color-text-button);
+	color: var(--color-text);
 	margin-bottom: 20px;
 	}
 
@@ -570,7 +570,8 @@ margin-right: 70px;
 fill: var(--color-text-button);
 	}
 
-	.footer-social:hover{
+	.footer-social:hover,
+	.footer-social:focus{
 background-color: var(--accent-color);
 	}
 
