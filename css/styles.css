@@ -136,6 +136,14 @@ ul {
   margin-left: auto;
 }
 
+.contact-item{
+	margin-right: 10px;
+}
+
+.contact-icon{
+	fill: var(--color-fone);
+}
+
 .contakt-li {
   margin-right: 50px;
 }
@@ -165,11 +173,21 @@ ul {
 .mine-title-content {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
+  
   text-align: center;
   max-width: 1600px;
-  margin: 0 auto;
-  background-color: #2f303a;
+
+  background-color: #C4C4C4;
+  background-image: linear-gradient(
+	to right,
+	rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)
+),
+url("../images/Img (20).jpg");
+background-position: center;
 }
+
 
 .title {
   margin-top: 0px;
@@ -203,45 +221,71 @@ ul {
 /* Переваги */
 
 .benefits-list:last-child {
-  margin-right: 0px;
-}
+	margin-right: 0px;
+  }
+  
+  .benefits-content {
+	display: flex;
+  }
 
-.benefits-content {
-  display: flex;
-}
+  .benefits-lis .benefits-icon{
+	  padding-left: 20px;
+  }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+  .benefits-img{
+	  width: 270px;
+	  height: 120px;
+	  margin: auto;
+	  margin-bottom: 30px;
+	  border-radius: 4px;
+	  background-color: var(--color-text-button);
+  }
 
-.benefits-list {
-  display: inline-block;
-  margin-right: 30px;
-}
+  .benefits-icon{
+	  display: block;
+	 
+  }
 
-.benefits-title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  .img-centr{
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	
+  }
 
-.benefits-text {
-  width: 270px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-fone);
-}
+  
+  .visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
+  
+  .benefits-list {
+	display: inline-block;
+	margin-right: 30px;
+  }
+  
+  .benefits-title {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+  }
+  
+  .benefits-text {
+	width: 270px;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--color-fone);
+  }
 
 /* Чим ми заніиаємось */
 
@@ -321,15 +365,113 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--color-fone);
+  margin-bottom: 16px;
 }
+
+.social-block{
+	display: flex;
+	padding: 0;
+justify-content: center;
+
+}
+
+.social{
+	padding: 0;
+	border: 0;
+	width: 44px;
+	height: 44px;
+margin-right: 10px;
+border-radius: 50%;
+}
+
+.social:last-child{
+	margin-right: 0;
+}
+
+.social:hover .team-icon{
+	fill: var(--color-text-button)
+}
+
+.social:hover{
+	background-color: var(--accent-color);
+}
+/* .team-icon:hover{
+	fill: var(--color-text-button);
+} */
+.team-icon{
+fill: #AFB1B8;
+padding: auto;	
+}
+
+
+
+/* Клієнти */
+.clients{
+
+}
+
+.clients-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+
+.clients-info{
+	display: flex;
+	padding: 0;
+}
+
+.client-item{
+	display: flex;
+width: 170px;
+height: 92px;
+text-align: center;
+justify-content: center;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+margin-right: 30px;
+}
+.client{
+	padding-right: 32px;
+	padding-left: 32px;
+}
+
+.client:hover .client-icon,
+.client:focus .client-icon{
+	fill: var(--accent-color)
+}
+
+.client-item:hover,
+.client-item:focus{
+	border: 1px solid #2196F3;
+}
+
+.client-item:last-child{
+	margin-right: 0;
+}
+
+.client-icon{
+	display: block;
+	fill: #AFB1B8;
+	}
 
 /* footer */
 
 .footer {
+	display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+
+.footer .container{
+	display: flex;
+}
+
 
 .logo-footer {
   font-family: Raleway, sans-serif;
@@ -356,6 +498,7 @@ ul {
 }
 
 .footer-list {
+
   list-style: none;
   font-size: 14px;
   line-height: 1.7;
@@ -390,12 +533,59 @@ ul {
   color: var(--accent-color);
 }
 
+.footer-info{
+margin-right: 70px;
+}
+
+.footer-soc{
+	margin-top: 20px;
+}
+
+.footer-soctext{
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--color-text-button);
+	margin-bottom: 20px;
+	}
+
+	.footer-block{
+	display: flex;
+	}	
+
+	.footer-social{
+		width: 44px;
+		height: 44px;
+		margin-right: 10px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.1);;
+	}
+	.footer-social:last-child{
+		margin-right: 0;
+	}
+
+	.footer-icon{
+fill: var(--color-text-button);
+	}
+
+	.footer-social:hover{
+background-color: var(--accent-color);
+	}
+
+
+
 /* Portfolio */
 
 .header-portfolio.activ {
   color: var(--accent-color);
 }
 .portfolio {
+}
+
+.footer-social{
+
 }
 
 /*Button*/
@@ -462,6 +652,12 @@ ul {
   text-decoration: none;
 }
 
+.portfolio-list:hover,
+.portfolio-list:focus{
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 .portfolio-content-menu {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
@@ -486,3 +682,19 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-fone);
 }
+
+
+
+.test-icon{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin: 50px 0 0 100px;
+	border: 1px solid #000;
+	text-align: center;
+	border-radius: 50%;
+	align-items: center;
+}
+
+
+
