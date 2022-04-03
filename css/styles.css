@@ -686,16 +686,7 @@ background-color: var(--accent-color);
 
 
 
-.test-icon{
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	margin: 50px 0 0 100px;
-	border: 1px solid #000;
-	text-align: center;
-	border-radius: 50%;
-	align-items: center;
-}
+
 
 
 
