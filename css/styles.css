@@ -119,9 +119,20 @@ ul {
 }
 
 .header-list:hover,
-.header-list:focus {
-  color: var(--accent-color);
+.header-list:focus{
+	color: var(--accent-color);
 }
+
+
+
+.contakt-list:hover .contact-icon,
+.contakt-list:focus .contact-icon{
+  fill: var(--accent-color);
+  }
+
+  .contact-icon{
+	  margin-right: 10px;
+  }
 
 .contakt {
   align-items: center;
