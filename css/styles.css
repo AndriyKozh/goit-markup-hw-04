@@ -175,6 +175,12 @@ ul {
   color: var(--accent-color);
 }
 
+.contakt-list{
+	display: flex;
+	align-items: center;
+}
+
+
 /* Герой */
 
 .list {
@@ -185,6 +191,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
+
   
   text-align: center;
   max-width: 1600px;
@@ -197,6 +204,8 @@ rgba(47, 48, 58, 0.4)
 ),
 url("../images/Img (20).jpg");
 background-position: center;
+background-repeat: repeat;
+background-size: cover; 
 }
 
 
@@ -386,6 +395,15 @@ justify-content: center;
 
 }
 
+.team-social-team{
+	margin-right: 10px;
+	list-style: none;
+	}
+
+	.team-social-team:last-child{
+		margin-right: 0;
+	}
+
 .social{
 	padding: 0;
 	border: 0;
@@ -433,22 +451,21 @@ margin-bottom: 50px;
 .clients-info{
 	display: flex;
 	padding: 0;
+	list-style: none;
 }
 
 .client-item{
-	display: flex;
 width: 170px;
 height: 92px;
-text-align: center;
-justify-content: center;
-border: 1px solid #AFB1B8;
-box-sizing: border-box;
-border-radius: 4px;
 margin-right: 30px;
+
 }
 .client{
-	padding-right: 32px;
-	padding-left: 32px;
+width: 100%;
+height: 100%;
+border: 1px solid #AFB1B8;
+
+border-radius: 4px;
 }
 
 .client:hover .client-icon,
@@ -456,8 +473,8 @@ margin-right: 30px;
 	fill: var(--accent-color)
 }
 
-.client-item:hover,
-.client-item:focus{
+.client:hover,
+.client:focus{
 	border: 1px solid #2196F3;
 }
 
@@ -480,6 +497,7 @@ margin-right: 30px;
 }
 
 .footer .container{
+	align-items: baseline;
 	display: flex;
 }
 
@@ -548,9 +566,6 @@ margin-right: 30px;
 margin-right: 70px;
 }
 
-.footer-soc{
-	margin-top: 20px;
-}
 
 .footer-soctext{
 	font-weight: 700;
@@ -563,18 +578,22 @@ margin-right: 70px;
 	}
 
 	.footer-block{
+		list-style: none;
 	display: flex;
 	}	
 
 	.footer-social{
 		width: 44px;
 		height: 44px;
-		margin-right: 10px;
 		border-radius: 50%;
 		background-color: rgba(255, 255, 255, 0.1);;
 	}
-	.footer-social:last-child{
+	.footer-social-item:last-child{
 		margin-right: 0;
+	}
+
+	.footer-social-item{
+		margin-right: 10px;
 	}
 
 	.footer-icon{
@@ -593,12 +612,7 @@ background-color: var(--accent-color);
 .header-portfolio.activ {
   color: var(--accent-color);
 }
-.portfolio {
-}
 
-.footer-social{
-
-}
 
 /*Button*/
 
@@ -664,8 +678,12 @@ background-color: var(--accent-color);
   text-decoration: none;
 }
 
-.portfolio-list:hover,
-.portfolio-list:focus{
+.portfolio-item{
+	display: block;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus{
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
